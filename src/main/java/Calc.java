@@ -4,7 +4,7 @@ public class Calc {
 
         if ((a == 0) && (b == 0) && (c == 0) && (d == 0) && (e == 0) && (f == 0)) {
 
-            System.out.println("5");
+            System.out.print("5");
             return "5";
 
         } else if ((a * d - c * b != 0) && ((e * d - b * f != 0) || (a * f - c * e != 0))) {
@@ -13,7 +13,7 @@ public class Calc {
 
             double x = (d * e - b * f) / (d * a - b * c);
 
-            System.out.println("2 " + x + " " + y);
+            System.out.print("2 " + x + " " + y);
             return "2";
 
         } else if (((a * d - c * b == 0) && ((e * d - b * f != 0) || (a * f - c * e != 0))) ||
@@ -42,7 +42,7 @@ public class Calc {
 
                     y = 0;
 
-                System.out.println("4 " + y);
+                System.out.print("4 " + y);
                 return "4.1";
 
             } else if (((a == 0 && b == 0 && e == 0 && c != 0 && d == 0) ||
@@ -63,12 +63,12 @@ public class Calc {
 
                     x = 0;
 
-                System.out.println("3 " + x);
+                System.out.print("3 " + x);
                 return "3.1";
 
             } else {
 
-                System.out.println("0");
+                System.out.print("0");
                 return "0";
             }
 
@@ -88,7 +88,7 @@ public class Calc {
 
                 y = e / b;
 
-            System.out.println("4 " + y);
+            System.out.print("4 " + y);
             return "4.2";
 
         } else if (b == 0 && d == 0) {
@@ -107,7 +107,7 @@ public class Calc {
 
                 x = e / a;
 
-            System.out.println("3 " + x);
+            System.out.print("3 " + x);
             return "3.2";
 
         } else if (b == 0 && e == 0) {
@@ -118,7 +118,7 @@ public class Calc {
 
             n = f / d;
 
-            System.out.println("1 " + k + " " + n);
+            System.out.print("1 " + k + " " + n);
             return "3.3";
 
         } else if (d == 0 && f == 0) {
@@ -129,7 +129,7 @@ public class Calc {
 
             n = e / b;
 
-            System.out.println("1 " + k + " " + n);
+            System.out.print("1 " + k + " " + n);
             return "1.1";
 
         } else if (a == 0 && e == 0) {
@@ -140,7 +140,7 @@ public class Calc {
 
             n = f / c;
 
-            System.out.println("1 " + k + " " + n);
+            System.out.print("1 " + k + " " + n);
             return "1.2";
 
         } else if (c == 0 && f == 0) {
@@ -151,7 +151,7 @@ public class Calc {
 
             n = e / a;
 
-            System.out.println("1 " + k + " " + n);
+            System.out.print("1 " + k + " " + n);
             return "1.3";
 
         } else if ((a / b == c / d)) {
@@ -162,12 +162,12 @@ public class Calc {
 
             n = f / d;
 
-            System.out.println("1 " + k + " " + n);
+            System.out.print("1 " + k + " " + n);
             return "1.4";
 
         } else {
 
-            System.out.println("Are u kidding me?");
+            System.out.print("Are u kidding me?");
             return "99";
 
         }
